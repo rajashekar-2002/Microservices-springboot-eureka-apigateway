@@ -1,0 +1,29 @@
+server:
+  port: 8764
+
+spring:
+  application:
+    name: apigatway
+
+
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+      # routes:
+      # - id: question-service
+      #   uri: 
+      #     lb://QUESTION-SERVICE
+      #   predicates:
+      #   - Path=/QUESTION-SERVICE/**
+
+
+      # - id: quiz-service
+      #   uri: 
+      #     lb://quiz-service
+      #   predicates:
+      #   - Path=/quiz-service/**
